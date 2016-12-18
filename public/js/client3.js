@@ -19,7 +19,10 @@ else {
     alert("WebRTC isn't supported");
 }
 
-
+if (location.protocol != 'https:')
+{
+ location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
 
 
 var connection = new WebSocket("wss://"+window.location.hostname);
