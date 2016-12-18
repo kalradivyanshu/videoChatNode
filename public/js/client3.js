@@ -198,7 +198,7 @@ function openDataChannel() {
     };
 
     dataChannel = myConnection.createDataChannel("myDataChannel", dataChannelOptions);
-    document.getElementById("connected").innerHTML = "Connecting <img src='http://www.lettersmarket.com/uploads/lettersmarket/blog/loaders/common_metal/ajax_loader_metal_512.gif' style='width:15px;'>";
+    document.getElementById("connected").innerHTML = "Connecting <img src='https://www.amerijet.com/images/progressbar-a.gif' style='width:15px;'>";
     console.log(dataChannel)
     dataChannel.onerror = function (error) {
         console.log("Error:", error);
