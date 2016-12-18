@@ -198,6 +198,7 @@ function openDataChannel() {
     };
 
     dataChannel = myConnection.createDataChannel("myDataChannel", dataChannelOptions);
+    document.getElementById("connected").innerHTML = "Connecting <img src='http://www.lettersmarket.com/uploads/lettersmarket/blog/loaders/common_metal/ajax_loader_metal_512.gif'>";
     console.log(dataChannel)
     dataChannel.onerror = function (error) {
         console.log("Error:", error);
@@ -208,6 +209,7 @@ function openDataChannel() {
     };
     dataChannel.onopen = function (event) {
         console.log("dataChannel open: ", dataChannel);
+        document.getElementById("connected").innerHTML = "Connected!"
     }
 }
 //when a user clicks the send message button
