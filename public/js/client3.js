@@ -7,7 +7,7 @@ if(hasUserMedia()) {
 
     navigator.getUserMedia({ video : true, audio : true}, function (stream) {
         var video = document.querySelector('video');
-        document.getElementById("error").innerHTML = "Success";
+        //document.getElementById("error").innerHTML = "Success";
         window.stream = stream;
         video.src = window.URL.createObjectURL(stream);
     }, function (err) {
