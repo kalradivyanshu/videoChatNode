@@ -207,7 +207,9 @@ function openDataChannel() {
         console.log("Got message:", event.data);
     };
 }
-
+dataChannel.onopen = function (event) {
+    console.log("dataChannel open: ", dataChannel);
+}
 //when a user clicks the send message button
 sendMsgBtn.addEventListener("click", function (event) {
     console.log("send message");
