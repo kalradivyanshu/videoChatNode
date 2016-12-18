@@ -1,0 +1,10 @@
+{
+  "name": "wakeUp",
+  "version": "0.0.1",
+  "description": "Video Chat!",
+  "dependencies": {
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "ws": "^1.1.1"
+  }
+}

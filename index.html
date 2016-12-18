@@ -1,0 +1,43 @@
+<html lang = "en">
+<head>
+    <meta charset = "utf-8" />
+
+</head>
+<style>
+    #localVideo {
+        width: 60%;
+    }
+    .videoDiv {
+        position: relative;
+    }
+    #remoteVideo {
+        width: 15%;
+        z-index: 1000;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+</style>
+<body>
+<div>
+    <input type = "text" id = "loginInput" />
+    <button id = "loginBtn">Login</button>
+</div>
+<div id="error"></div>
+<div>
+    <input type = "text" id = "otherUsernameInput" />
+    <button id = "connectToOtherUsernameBtn">Establish connection</button>
+</div>
+
+<div>
+    <input type = "text" id = "msgInput" />
+    <button id = "sendMsgBtn">Send text message</button>
+</div>
+<div class="videoDiv">
+<video id="localVideo" id="local" autoplay muted></video>
+<video id="remoteVideo" id="remote" autoplay></video>
+</div>
+<script src = "js/client3.js"></script>
+</body>
+
+</html>
