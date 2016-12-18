@@ -198,7 +198,7 @@ function openDataChannel() {
     };
 
     dataChannel = myConnection.createDataChannel("myDataChannel", dataChannelOptions);
-
+    console.log(dataChannel)
     dataChannel.onerror = function (error) {
         console.log("Error:", error);
     };
