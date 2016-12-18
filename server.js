@@ -4,7 +4,7 @@ var express = require('express')
 var app = express();
 var http = require('http').Server(app);
 //creating a websocket server at port 9090 
-var wss = new WebSocketServer({port: 9090}); 
+var wss = new WebSocketServer({port: process.env.PORT || 5000}); 
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static('public'));
