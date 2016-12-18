@@ -22,7 +22,7 @@ else {
 
 
 
-var connection = new WebSocket("ws://"+window.location.hostname+":9090");
+var connection = new WebSocket("wss://"+window.location.hostname+":9090");
 var name = "";
 
 var loginInput = document.querySelector('#loginInput');
