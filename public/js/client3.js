@@ -88,7 +88,7 @@ function onLogin(success) {
             "iceServers": [{ "url": "stun:stun.1.google.com:19302" }]
         };
 
-        myConnection = new webkitRTCPeerConnection(configuration, {optional: [{ RtpDataChannels: true }]});
+        myConnection = new webkitRTCPeerConnection(configuration);
 
         console.log("RTCPeerConnection object was created");
         console.log(myConnection);
