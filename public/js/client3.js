@@ -84,8 +84,11 @@ function onLogin(success) {
         alert("oops...try a different username");
     } else {
         //creating our RTCPeerConnection object
-        var configuration = {
+        /*var configuration = {
             "iceServers": [{ "url": "stun:stun.1.google.com:19302" }]
+        };*/
+        *var configuration = {
+            "iceServers": [{ "url": "turn:kalradivyanshu@gmail.com@numb.viagenie.ca", "credential":"asd123123" }]
         };
 
         myConnection = new webkitRTCPeerConnection(configuration);
