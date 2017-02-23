@@ -176,6 +176,8 @@ function onOffer(offer, name) {
         });
 
     }, function (error) {
+        console.log(error);
+        window.error1 = error;
         alert("oops...error");
     });
 }
