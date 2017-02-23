@@ -88,7 +88,7 @@ function onLogin(success) {
             "iceServers": [{ "url": "stun:stun.1.google.com:19302" }]
         };*/
         var configuration = {
-            "iceServers": [{ "url": "turn:kalradivyanshu@gmail.com@numb.viagenie.ca", "credential":"asd123123" }]
+            "iceServers": [{ "url": "turn:numb.viagenie.ca", "username":"kalradivyanshu@gmail.com","credential":"asd123123" }]
         };
 
         myConnection = new webkitRTCPeerConnection(configuration);
