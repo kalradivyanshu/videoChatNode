@@ -87,7 +87,7 @@ function onLogin(success) {
         /*var configuration = {
             "iceServers": [{ "url": "stun:stun.1.google.com:19302" }]
         };*/
-        *var configuration = {
+        var configuration = {
             "iceServers": [{ "url": "turn:kalradivyanshu@gmail.com@numb.viagenie.ca", "credential":"asd123123" }]
         };
 
