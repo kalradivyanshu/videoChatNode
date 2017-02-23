@@ -165,6 +165,7 @@ connectToOtherUsernameBtn.addEventListener("click", function () {
 //when somebody wants to call us
 function onOffer(offer, name) {
     console.log("GOT OFFER!")
+    window.offer = offer;
     connectedUser = name;
     myConnection.setRemoteDescription(new RTCSessionDescription(offer));
 
