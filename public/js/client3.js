@@ -169,6 +169,7 @@ function onOffer(offer, name) {
     myConnection.setRemoteDescription(new RTCSessionDescription(offer));
 
     myConnection.createAnswer(function (answer) {
+        console.log("ANSWER", answer);
         myConnection.setLocalDescription(answer);
 
         send({
