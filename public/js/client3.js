@@ -91,7 +91,15 @@ function onLogin(success) {
             "iceServers": [{ "url": "turn:numb.viagenie.ca", "username":"kalradivyanshu@gmail.com","credential":"asd123123" }]
         };
 
-        myConnection = new webkitRTCPeerConnection(configuration);
+        try
+        {
+            myConnection = new webkitRTCPeerConnection(configuration);
+        }
+        catch (err)
+        {
+            console.log(err);
+            myConnection = new RTCPeerConnection(configuration);
+        }
 
         console.log("RTCPeerConnection object was created");
         console.log(myConnection);
